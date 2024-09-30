@@ -7,6 +7,7 @@ CREATE TABLE pessoas(
     nome VARCHAR(50) NOT NULL,
     data_nasc DATE NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL
     num_telefone VARCHAR(14) UNIQUE NOT NULL,
     lvl_conta INTEGER NOT NULL DEFAULT 0,
     exp_conta INTEGER NOT NULL DEFAULT 0,
@@ -76,6 +77,22 @@ CREATE TABLE certificado(
     data_expiracao DATE NOT NULL,
     PRIMARY KEY(id_certificado, id_fluente),
     CONSTRAINT fk_fluenteCertificado FOREIGN KEY(id_fluente) REFERENCES fluentes(id_usuario)
+);
+
+CREATE TABLE agendas(
+    id_agenda INTEGER NOT NULL AUTO_INCREMENT,
+    id_usuario INTEGER NOT NULL,
+    id_fluente INTEGER NOT NULL,
+    data_inicio DATETIME NOT NULL,
+    data_expira DATETIME NOT NULL,
+    data_fim DATETIME NOT NULL,
+    feedback_user VARCHAR(255) NOT NULL,
+    positive_exp_user BOOLEAN NOT NULL,
+    feedback_fluente VARCHAR(255) NOT NULL,
+    positive_exp_fluente BOOLEAN NOT NULL
+    PRIMARY KEY(id_agenda),
+    CONSTRAINT fk_userAgenda FOREIGN KEY(id_usuario) REFERENCES usuarios(id_pessoa),
+    CONSTRAINT fk_fluenteAgenda FOREIGN KEY(id_fluente) REFERENCES fluentes(id_usuario)
 );
 
 -- Parte single Player

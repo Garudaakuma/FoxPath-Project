@@ -110,3 +110,11 @@ CREATE TABLE alternativas(
     PRIMARY KEY(id_alternativa),
     CONSTRAINT fk_questaoAlternativa FOREIGN KEY(id_questao) REFERENCES questoes(id_questao)
 );
+
+CREATE TABLE leaderboard(
+    id_leaderboard INTEGER NOT NULL AUTO_INCREMENT,
+    id_jogador INTEGER NOT NULL,
+    score_total INTEGER NOT NULL DEFAULT 100,
+    PRIMARY KEY(id_leaderboard),
+    CONSTRAINT fk_jogadorLeaderboard FOREIGN KEY(id_jogador) REFERENCES jogadores(id_usuario)
+);
