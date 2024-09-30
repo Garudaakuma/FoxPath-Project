@@ -37,14 +37,14 @@ INSERT INTO usuarios(
     "Brasileiro"
 );
 
-INSERT INTO denuncias( 
+INSERT INTO denuncias(
 	id_adm,
 	id_denunciado,
     id_denunciador,
     data_fim, data_fim,
     tag_reportado,
     motivo,
-    descricao 
+    descricao
 ) VALUES (
 	0,
     1,

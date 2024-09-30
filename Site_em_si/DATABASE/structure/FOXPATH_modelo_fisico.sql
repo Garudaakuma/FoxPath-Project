@@ -7,7 +7,7 @@ CREATE TABLE pessoas(
     nome VARCHAR(50) NOT NULL,
     data_nasc DATE NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
-    senha VARCHAR(255) NOT NULL
+    senha VARCHAR(255) NOT NULL,
     num_telefone VARCHAR(14) UNIQUE NOT NULL,
     lvl_conta INTEGER NOT NULL DEFAULT 0,
     exp_conta INTEGER NOT NULL DEFAULT 0,
@@ -51,8 +51,8 @@ CREATE TABLE denuncias(
     data_inicio DATETIME NOT NULL,
     data_fim DATETIME,
     tag_reportado CHAR(4) UNIQUE NOT NULL,
-    motivo VARCHAR(50) NOT NULL,
-    descricao VARCHAR(255) NOT NULL,
+    motivo VARCHAR(255) NOT NULL,
+    descricao VARCHAR(500) NOT NULL,
     PRIMARY KEY(id_denuncia),
     CONSTRAINT fk_admDenuncia FOREIGN KEY(id_adm) REFERENCES administradores(id_pessoa),
     CONSTRAINT fk_userDnncdDenuncia FOREIGN KEY(id_denunciado) REFERENCES usuarios(id_pessoa),
@@ -72,7 +72,7 @@ CREATE TABLE certificado(
     id_certificado INTEGER NOT NULL AUTO_INCREMENT,
     id_fluente INTEGER NOT NULL,
     nome VARCHAR(100) NOT NULL,
-    descricao VARCHAR(255) NOT NULL,
+    pdf_certificado BLOB NOT NULL,
     data_emissao DATE NOT NULL,
     data_expiracao DATE NOT NULL,
     PRIMARY KEY(id_certificado, id_fluente),
@@ -84,12 +84,12 @@ CREATE TABLE agendas(
     id_usuario INTEGER NOT NULL,
     id_fluente INTEGER NOT NULL,
     data_inicio DATETIME NOT NULL,
-    data_expira DATETIME NOT NULL,
+    data_expira TIME NOT NULL DEFAULT "00:30:00",
     data_fim DATETIME NOT NULL,
     feedback_user VARCHAR(255) NOT NULL,
     positive_exp_user BOOLEAN NOT NULL,
     feedback_fluente VARCHAR(255) NOT NULL,
-    positive_exp_fluente BOOLEAN NOT NULL
+    positive_exp_fluente BOOLEAN NOT NULL,
     PRIMARY KEY(id_agenda),
     CONSTRAINT fk_userAgenda FOREIGN KEY(id_usuario) REFERENCES usuarios(id_pessoa),
     CONSTRAINT fk_fluenteAgenda FOREIGN KEY(id_fluente) REFERENCES fluentes(id_usuario)
@@ -99,7 +99,7 @@ CREATE TABLE agendas(
 CREATE TABLE idiomas(
     id_idioma INTEGER NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
-    dificuldade VARCHAR(10) NOT NULL,
+    dificuldade VARCHAR(15) NOT NULL,
     PRIMARY KEY(id_idioma)
 );
 
@@ -111,6 +111,14 @@ CREATE TABLE jogadores(
     PRIMARY KEY(id_usuario),
     CONSTRAINT fk_userJogador FOREIGN KEY(id_usuario) REFERENCES usuarios(id_pessoa),
     CONSTRAINT fk_idiomaJogador FOREIGN KEY(id_idioma) REFERENCES idiomas(id_idioma)
+);
+
+CREATE TABLE leaderboard(
+    id_leaderboard INTEGER NOT NULL AUTO_INCREMENT,
+    id_jogador INTEGER NOT NULL,
+    score_total INTEGER NOT NULL DEFAULT 100,
+    PRIMARY KEY(id_leaderboard),
+    CONSTRAINT fk_jogadorLeaderboard FOREIGN KEY(id_jogador) REFERENCES jogadores(id_usuario)
 );
 
 CREATE TABLE fases(
@@ -169,10 +177,10 @@ CREATE TABLE avatar(
     cauda_type INTEGER NOT NULL DEFAULT 0,
     torso_type INTEGER NOT NULL DEFAULT 0,
     head_type INTEGER NOT NULL DEFAULT 0,
-    perna_color CHAR(7) NOT NULL DEFAULT '#000000',
-    cauda_color CHAR(7) NOT NULL DEFAULT '#000000',
-    torso_color CHAR(7) NOT NULL DEFAULT '#000000',
-    head_color CHAR(7) NOT NULL DEFAULT '#000000',
+    perna_color CHAR(7) NOT NULL DEFAULT '#FFFFFF',
+    cauda_color CHAR(7) NOT NULL DEFAULT '#FFFFFF',
+    torso_color CHAR(7) NOT NULL DEFAULT '#FFFFFF',
+    head_color CHAR(7) NOT NULL DEFAULT '#FFFFFF',
     PRIMARY KEY(id_avatar),
     CONSTRAINT fk_userAvatar FOREIGN KEY(id_usuario) REFERENCES usuarios(id_pessoa)
 );
@@ -190,7 +198,7 @@ CREATE TABLE cabelo(
     id_cosmetico INTEGER NOT NULL,
     nome VARCHAR(100) NOT NULL,
     descricao VARCHAR(255) NOT NULL,
-    cor char(7) NOT NULL DEFAULT '#000000',
+    cor char(7) NOT NULL DEFAULT '#FFFFFF',
     PRIMARY KEY(id_cabelo, id_cosmetico),
     CONSTRAINT fk_cosmeticoCabelo FOREIGN KEY(id_cosmetico) REFERENCES cosmeticos(id_cosmetico)
 );
@@ -199,7 +207,7 @@ CREATE TABLE chapeus(
     id_cosmetico INTEGER NOT NULL,
     nome VARCHAR(100) NOT NULL,
     descricao VARCHAR(255) NOT NULL,
-    cor char(7) NOT NULL DEFAULT '#000000',
+    cor char(7) NOT NULL DEFAULT '#FFFFFF',
     PRIMARY KEY(id_chapeus, id_cosmetico),
     CONSTRAINT fk_cosmeticochapeus FOREIGN KEY(id_cosmetico) REFERENCES cosmeticos(id_cosmetico)
 );
@@ -208,7 +216,7 @@ CREATE TABLE roupas_superiores(
     id_cosmetico INTEGER NOT NULL,
     nome VARCHAR(100) NOT NULL,
     descricao VARCHAR(255) NOT NULL,
-    cor char(7) NOT NULL DEFAULT '#000000',
+    cor char(7) NOT NULL DEFAULT '#FFFFFF',
     PRIMARY KEY(id_roupas_superior, id_cosmetico),
     CONSTRAINT fk_cosmeticoRpsSuperiores FOREIGN KEY(id_cosmetico) REFERENCES cosmeticos(id_cosmetico)
 );
@@ -217,7 +225,7 @@ CREATE TABLE roupas_inferiores(
     id_cosmetico INTEGER NOT NULL,
     nome VARCHAR(100) NOT NULL,
     descricao VARCHAR(255) NOT NULL,
-    cor char(7) NOT NULL DEFAULT '#000000',
+    cor char(7) NOT NULL DEFAULT '#FFFFFF',
     PRIMARY KEY(id_roupas_inferior, id_cosmetico),
     CONSTRAINT fk_cosmeticoRpsInferiores FOREIGN KEY(id_cosmetico) REFERENCES cosmeticos(id_cosmetico)
 );
