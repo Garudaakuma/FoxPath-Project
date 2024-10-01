@@ -16,6 +16,14 @@ INSERT INTO pessoas( -- 1
     "+51-7191234567"
 );
 
+INSERT INTO usuarios(
+	id_pessoa,
+    nacionalidade
+) VALUES (
+	1,
+    "Brasileiro"
+);
+
 -- ? Usuario generico
 
 INSERT INTO pessoas( -- 2
@@ -164,4 +172,124 @@ INSERT INTO jogadores(
 ) VALUES (
     5,
     1
+);
+
+INSERT INTO pessoas( -- 6
+	tag,
+	nome,
+	data_nasc,
+	email,
+	senha,
+	num_telefone
+) VALUES (
+	"3333",
+    "pessoa_jurema",
+    "2001-09-11", -- YYYY-MM-DD
+    "jurema@gmail.com",
+    "XxjuremaxX",
+    "+51-0091234567"
+);
+
+INSERT INTO usuarios(
+	id_pessoa,
+    nacionalidade
+) VALUES (
+	6,
+    "Brasileiro"
+);
+
+INSERT INTO pessoas( -- 7
+	tag,
+	nome,
+	data_nasc,
+	email,
+	senha,
+	num_telefone
+) VALUES (
+	"4444",
+    "pessoa_carlinhos",
+    "2001-09-11", -- YYYY-MM-DD
+    "carlinhos@gmail.com",
+    "admin123",
+    "+51-1091234567"
+);
+
+INSERT INTO usuarios(
+	id_pessoa,
+    nacionalidade
+) VALUES (
+	7,
+    "Brasileiro"
+);
+
+INSERT INTO pessoas( -- 8
+	tag,
+	nome,
+	data_nasc,
+	email,
+	senha,
+	num_telefone
+) VALUES (
+	"5555",
+    "pessoa_rodrigo",
+    "2001-09-11", -- YYYY-MM-DD
+    "rodrigo@gmail.com",
+    "admin123",
+    "+51-9791234567"
+);
+
+INSERT INTO usuarios(
+	id_pessoa,
+    nacionalidade
+) VALUES (
+	8,
+    "Brasileiro"
+);
+
+INSERT INTO pessoas( -- 9
+	tag,
+	nome,
+	data_nasc,
+	email,
+	senha,
+	num_telefone
+) VALUES (
+	"5551",
+    "pessoa_Cleiton",
+    "2001-09-11", -- YYYY-MM-DD
+    "cleiton@gmail.com",
+    "admin123",
+    "+51-4591234567"
+);
+
+INSERT INTO usuarios(
+	id_pessoa,
+    nacionalidade
+) VALUES (
+	9,
+    "Brasileiro"
+);
+
+INSERT INTO pessoas( -- 10
+	tag,
+	nome,
+	data_nasc,
+	email,
+	senha,
+	num_telefone
+) VALUES (
+	"6666",
+    "pessoa_doomGuy",
+    "2001-09-11", -- YYYY-MM-DD
+    "doomGuy@gmail.com",
+    "admin123",
+    "+51-8191234567"
+);
+
+INSERT INTO usuarios(
+	id_pessoa,
+    nacionalidade
+) VALUES (
+	10,
+    "Brasileiro"
 );

@@ -15,7 +15,7 @@ INSERT INTO denuncias(
     5,
     NOW(), -- YYYY-MM-DD HH:MM:SS
     "1111",
-    " Falou que bolacha é biscoito "
+    " Falou que bolacha é biscoito ",
     " O denunciado em questão teve a audacia de falar que bolacha é biscoito "
 );
 
