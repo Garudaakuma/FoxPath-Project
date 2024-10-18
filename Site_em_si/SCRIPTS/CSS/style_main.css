@@ -6,3 +6,7 @@ body {
     background-color: #1e1e1e;
     color: #1269ff;
 }
+
+header img {
+    width: 5%;
+}
