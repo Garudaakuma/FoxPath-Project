@@ -19,6 +19,34 @@ INSERT INTO denuncias(
     " O denunciado em questão teve a audacia de falar que bolacha é biscoito "
 );
 
+INSERT INTO categorias(nome) VALUES ("Palavras de baixo calao");
+
+INSERT INTO categorias(nome) VALUES ("Desinformacao");
+
+INSERT INTO denunciados(
+    id_adm,
+    id_categoria,
+    tempo,
+    tag_pessoa
+) VALUES (
+    3,
+    1,
+    "00:00:10",
+    "!@#$"
+);
+
+INSERT INTO denunciados(
+    id_adm,
+    id_categoria,
+    tempo,
+    tag_pessoa
+) VALUES (
+    3,
+    2,
+    "23:59:59",
+    "1111"
+);
+
 -- ? Agenda
 
 INSERT INTO agendas(

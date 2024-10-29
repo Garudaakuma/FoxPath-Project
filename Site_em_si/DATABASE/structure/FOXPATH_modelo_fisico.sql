@@ -33,13 +33,21 @@ CREATE TABLE administradores(
 );
 
 -- Por parte de adms
+CREATE TABLE categoria(
+    id_categoria INTEGER NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    PRIMARY KEY(id_categoria)
+);
+
 CREATE TABLE denunciados(
     id_ban INTEGER NOT NULL AUTO_INCREMENT,
     id_adm INTEGER NOT NULL,
+    id_categoria INTEGER NOT NULL,
     tempo TIME NOT NULL,
     tag_pessoa CHAR(4) UNIQUE NOT NULL,
     PRIMARY KEY(id_ban),
-    CONSTRAINT fk_admBan FOREIGN KEY(id_adm) REFERENCES administradores(id_pessoa)
+    CONSTRAINT fk_admBan FOREIGN KEY(id_adm) REFERENCES administradores(id_pessoa),
+    CONSTRAINT fk_catBan FOREIGN KEY(id_categoria) REFERENCES categorias(id_categoria)
 );
 
 -- parte multi Player

@@ -4,6 +4,7 @@ CREATE TABLE denunciados(
     id_adm INTEGER NOT NULL,
     tempo TIME NOT NULL,
     tag_pessoa CHAR(4) UNIQUE NOT NULL,
+    categoria VARCHAR(255) NOT NULL,
     PRIMARY KEY(id_ban),
     CONSTRAINT fk_admBan FOREIGN KEY(id_adm) REFERENCES administradores(id_pessoa)
 );
