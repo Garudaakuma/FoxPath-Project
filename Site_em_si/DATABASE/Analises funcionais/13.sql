@@ -1,6 +1,5 @@
--- ! Número de denúncias feitas em cada semana
+-- ! Número de denúncias resolvidas em cada semana
 SELECT
-    YEAR(dn.data_fim) AS ano,
     CASE DAYNAME(dn.data_fim)
 		WHEN 'Monday' THEN 'Segunda-feira'
         WHEN 'Tuesday' THEN 'Terça-feira'
@@ -12,4 +11,4 @@ SELECT
     END AS semana,
     COUNT(dn.id_denuncia) as num_denuncias
 FROM denuncias AS dn
-GROUP BY ano, semana ORDER BY ano DESC, semana DESC;
+GROUP BY semana ORDER BY semana DESC;

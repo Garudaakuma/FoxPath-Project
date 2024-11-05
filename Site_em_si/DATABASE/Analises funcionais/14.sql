@@ -1,6 +1,6 @@
--- ! Número de denúncias feitas em cada semana
+-- ! Número de denúncias resolvidas por administradores em cada semana
 SELECT
-    YEAR(dn.data_fim) AS ano,
+    ps.nome as nome_administrador,
     CASE DAYNAME(dn.data_fim)
 		WHEN 'Monday' THEN 'Segunda-feira'
         WHEN 'Tuesday' THEN 'Terça-feira'
@@ -10,6 +10,9 @@ SELECT
         WHEN 'Saturday' THEN 'Sábado'
         WHEN 'Sunday' THEN 'Domingo'
     END AS semana,
-    COUNT(dn.id_denuncia) as num_denuncias
+    COUNT(dn.id_denuncia) AS numero_denuncias_resolvidas
 FROM denuncias AS dn
-GROUP BY ano, semana ORDER BY ano DESC, semana DESC;
+JOIN administradores AS adm ON adm.id_pessoa = dn.id_adm
+JOIN pessoas AS ps ON ps.id_pessoa = adm.id_pessoa
+WHERE dn.data_fim IS NOT NULL
+GROUP BY nome_administrador, semana ORDER BY semana DESC;

@@ -16,7 +16,7 @@ CREATE TABLE pessoas(
 );
 
 CREATE TABLE usuarios(
-    id_pessoa INTEGER NOT NULL AUTO_INCREMENT,
+    id_pessoa INTEGER NOT NULL,
     score_perfil INTEGER NOT NULL DEFAULT 100,
     nacionalidade VARCHAR(50) NOT NULL,
     PRIMARY KEY(id_pessoa),
@@ -69,7 +69,7 @@ CREATE TABLE denuncias(
 
 -- por parte de usuarios
 CREATE TABLE fluentes(
-    id_usuario INTEGER NOT NULL AUTO_INCREMENT,
+    id_usuario INTEGER NOT NULL,
     idioma_fluente VARCHAR(20) NOT NULL,
     PRIMARY KEY(id_usuario),
     CONSTRAINT fk_userFluente FOREIGN KEY(id_usuario) REFERENCES usuarios(id_pessoa)
