@@ -26,10 +26,11 @@ INSERT INTO administradores(
 
 INSERT INTO denunciados(
 	id_adm,
+    id_categoria,
     tempo,
     tag_pessoa
 ) VALUES (
-	1,
+	1, 1,
     "hh:mm:ss",
     "!@#$"
 );

@@ -68,6 +68,10 @@ INSERT INTO pessoas( -- 3
     "+51-3192481216"
 );
 
+INSERT INTO categorias(nome) VALUES ("Palavras de baixo calao");
+
+INSERT INTO categorias(nome) VALUES ("Desinformacao");
+
 INSERT INTO administradores(
 	id_pessoa
 ) VALUES (
@@ -76,10 +80,11 @@ INSERT INTO administradores(
 
 INSERT INTO denunciados(
 	id_adm,
+	id_categoria,
     tempo,
     tag_pessoa
 ) VALUES (
-	3,
+	3, 1,
     "00:00:10",
     "!@#$"
 );

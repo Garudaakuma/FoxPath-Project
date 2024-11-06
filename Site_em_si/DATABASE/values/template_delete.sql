@@ -47,6 +47,9 @@ ALTER TABLE certificado AUTO_INCREMENT = 0;
 
 DELETE FROM fluentes WHERE id_usuario;
 
+DELETE FROM categorias WHERE id_categoria;
+ALTER TABLE categorias AUTO_INCREMENT = 0;
+
 DELETE FROM denuncias WHERE id_denuncia;
 ALTER TABLE denuncias AUTO_INCREMENT = 0;
 

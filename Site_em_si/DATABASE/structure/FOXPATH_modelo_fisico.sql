@@ -33,7 +33,7 @@ CREATE TABLE administradores(
 );
 
 -- Por parte de adms
-CREATE TABLE categoria(
+CREATE TABLE categorias(
     id_categoria INTEGER NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
     PRIMARY KEY(id_categoria)
