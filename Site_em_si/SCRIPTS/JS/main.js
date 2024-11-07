@@ -1,6 +1,9 @@
 
-alert("main.js loaded!\nHello world!")
 
-function btn_goHome() {
-    location.href("../Site_em_si/HTML/home.html")
+function btn_createAcount() {
+    window.location.href = "/FOXPATH/SCRIPTS/PHP/createAcount.php"
+}
+
+function btn_login() {
+    window.location.href = "/FOXPATH/SCRIPTS/PHP/login.php"
 }
