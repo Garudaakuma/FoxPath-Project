@@ -3,10 +3,9 @@
 }
 
 body {
-    background-color: #1e1e1e;
-    color: #1269ff;
+    background-color: #fefefe;
 }
 
-header img {
-    width: 5%;
+.logo_foxpath {
+    width: 15%;
 }

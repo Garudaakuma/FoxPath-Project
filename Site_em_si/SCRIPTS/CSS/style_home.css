@@ -1,7 +1,39 @@
 
-header {
-    padding: 4vh;
-    border-radius: 2vh;
-    background-color: #1269ff;
-    color: #1e1e1e;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 35vh;
+}
+
+.foxpath_intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0def, rgba(255,255,255,1)0%,rgba(0,121,255,1)100%)
+}
+
+.letters {
+    background: linear-gradient(0deg, rgba(0,121,255,1) 20%, rgba(255,255,255,1) 85%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30vb; /*250px*/
+}
+
+.buttons_login {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap: 2vh;
+}
+
+.buttons_login button {
+    border: none;
+    background-color: #0079FF;
+    color: white;
+    padding: 2vh 20vw;
+    border-radius: 10px;
 }
