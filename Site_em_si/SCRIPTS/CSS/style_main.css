@@ -6,6 +6,21 @@ body {
     background-color: #fefefe;
 }
 
+.foxpath_intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0def, rgba(255,255,255,1) 0%,rgba(0,121,255,1)100%)
+}
+
+.letters {
+    background: linear-gradient(0deg, rgba(0,121,255,1) 20%, rgba(255,255,255,1) 85%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30vb; /*250px*/
+}
+
 .logo_foxpath {
     width: 15%;
 }

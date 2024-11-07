@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="/FOXPATH/IMAGES/ico_logoFoxPath/favicon.ico">
     <link rel="stylesheet" href="../CSS/style_main.css">
     <link rel="stylesheet" href="../CSS/style_home.css">
-    <title>FOXPATH - Home</title>
+    <title>FOXPATH</title>
 </head>
 <body>
     <section class="foxpath_intro">
