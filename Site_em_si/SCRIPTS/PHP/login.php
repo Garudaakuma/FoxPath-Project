@@ -9,7 +9,7 @@
 
     <title>FOXPATH - Login</title>
 </head>
-<body>
+<body class="tela_login">
     <section class="foxpath_intro">
         <div class="letters">F</div>
             <img class="logo_foxpath" src="/FOXPATH/IMAGES/foxpath-transparent.png" alt="logo_foxpath">
