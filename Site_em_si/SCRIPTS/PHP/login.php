@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style_main.css">
     <link rel="stylesheet" href="../CSS/style_login.css">
-    <link rel="stylesheet" href="../JS/main.js">
 
     <title>FOXPATH - Login</title>
 </head>
@@ -47,4 +46,5 @@
         <div class="back_button"><button onclick="btn_pagina_inicial()">Voltar</button></div>
     </div>
 </body>
+<script src="../JS/main.js"></script>
 </html>
