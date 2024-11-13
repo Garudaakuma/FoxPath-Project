@@ -10,15 +10,14 @@
 </head>
 <body>
     <section class="foxpath_intro">
-            <div class="letters">F</div>
-            <img class="logo_foxpath" src="/FOXPATH/IMAGES/foxpath-transparent.png" alt="logo_foxpath">
-            <div class="letters">XPATH</div>
-        </div>
+        <div class="letters">F</div>
+        <img class="logo_foxpath" src="/FOXPATH/IMAGES/foxpath-transparent.png" alt="logo_foxpath">
+        <div class="letters">XPATH</div>
     </section>
     <main>
         <h1 class="title-cad">CRIE SUA CONTA!</h1>
         <form action="/FOXPATH/SCRIPTS/">
-
+            ...
         </form>
     </main>
 </body>

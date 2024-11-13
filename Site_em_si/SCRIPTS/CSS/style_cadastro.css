@@ -6,3 +6,10 @@
     color: transparent;
     font-size: 5vb; /*250px*/
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
