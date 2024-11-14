@@ -71,7 +71,7 @@
     gap: 1vh;
 }
 
-.bts input[type="button"], button {
+.bts input[type="button"], button, input[type="submit"] {
     text-align: center;
     border: none;
     cursor:pointer;

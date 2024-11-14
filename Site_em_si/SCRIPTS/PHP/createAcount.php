@@ -1,3 +1,49 @@
+
+<?php
+include 'session_start.php';
+function creationAcountsParts() {
+    switch ($_SESSION["createAcountPart"]) {
+        case 0:
+            echo '
+<div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
+    <form class="forms_cadastro" action="/">
+        <div class="inputs">
+        <p>Nome:</p><input placeholder="DIGITE NOME AQUI..." type="text" name="Nome" id="Nome_input">
+        </div>
+        <div class="inputs">
+        <p>Email:</p><input placeholder="DIGITE EMAIL AQUI..." type="text" name="Email" id="Email_input">
+        </div>
+        <div class="inputs">
+                <p>Usuário:</p>
+            <div class="radios">
+                <div><input type="radio" name="user_choice" id="user_default" value="user_default"><P>PADRÃO</P></div>
+                <div><input type="radio" name="user_choice" id="user_fluente" value="user_fluente"><p>FLUENTE</p></div>
+            </div>
+        </div>
+        <div class="bts">
+            <input type="button"onclick="nextPart();" value="Continuar" id="btn_continue">
+            <button id="btn_cancel" onclick="btn_cancel()">Cancelar</button>
+        </div>
+    </form>
+</div>
+            ';
+            break;
+        case 1:
+            echo '
+kys - keep youself safe
+            ';
+            break;
+        default:
+            echo "Error!";
+            break;
+    }
+}
+function nextPart() {
+    $_SESSION["createAcountPart"]+=1;
+    creationAcountsParts();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,26 +62,7 @@
         </div>
     </section>
     <main class="cadastro">
-        <div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
-        <form action="/FoxPath-Project/Site_em_si/SCRIPTS/" class="forms_cadastro">
-            <div class="inputs">
-            <p>Nome:</p><input placeholder="DIGITE NOME AQUI..." type="text" name="Nome" id="Nome_input">
-            </div>
-            <div class="inputs">
-            <p>Email:</p><input placeholder="DIGITE EMAIL AQUI..." type="text" name="Email" id="Email_input">
-            </div>
-            <div class="inputs">
-                    <p>Usuário:</p>
-                <div class="radios">
-                    <div><input type="radio" name="user_choice" id="user_default" value="user_default"><P>PADRÃO</P></div>
-                    <div><input type="radio" name="user_choice" id="user_fluente" value="user_fluente"><p>FLUENTE</p></div>
-                </div>
-            </div>
-            <div class="bts">
-                <input type="button" value="Continuar" id="btn_continue">
-                <button type="button" id="btn_cancel" onclick="btn_cancel()">Cancelar</button>
-            </div>
-        </form>
+        <?php creationAcountsParts();?>
     </main>
 </body>
 <script src="../JS/createAcount.js"></script>
