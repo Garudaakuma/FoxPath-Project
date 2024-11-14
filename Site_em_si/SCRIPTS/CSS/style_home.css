@@ -32,8 +32,16 @@ body {
 
 .buttons_login button {
     border: none;
+    cursor: pointer;
     background-color: #0079FF;
-    color: white;
+    color: #FFFFFF;
     padding: 2vh 20vw;
     border-radius: 10px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}.buttons_login button:hover {
+    outline: #0079FF solid 10px;
+    background-color: #FFFFFF;
+    color: #0079FF;
+    padding: 3vh 21vw;
+    transition: 0.5s;
 }
