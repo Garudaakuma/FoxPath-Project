@@ -18,8 +18,8 @@
     </section>
     <main>
         <div class="buttons_login">
-            <button onclick="btn_createAcount() <?php include 'session_start.php' ?>" >Criar conta</button>
-            <button onclick="btn_login() <?php include 'session_start.php' ?>" >Fazer login</button>
+            <button onclick="btn_createAcount()" >Criar conta</button>
+            <button onclick="btn_login()" >Fazer login</button>
         </div>
     </main>
 </body>

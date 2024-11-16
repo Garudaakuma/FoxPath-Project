@@ -1,0 +1,9 @@
+{
+    "mySql": {
+        "servername": "localhost",
+        "username": "root",
+        "password": "****",
+        "database": "bd_foxpath",
+        "port": "3307"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "cad_part-1": {
+        "nome": null,
+        "email": null,
+        "user_choice": null
+    },
+    "cad_part-2": {
+        "fluente_bool": null,
+        "genero": null,
+        "data_nascimento": null,
+        "Certificado": null
+    },
+    "cad_part-3": {
+        "senha": null,
+        "confirm_senha": null
+    }
+}

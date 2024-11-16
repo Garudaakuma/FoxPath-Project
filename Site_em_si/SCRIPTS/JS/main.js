@@ -1,5 +1,4 @@
 
-
 function btn_createAcount() {
     window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/createAcount.php"
 }
