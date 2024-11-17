@@ -18,26 +18,27 @@
     </section>
     <main class="cadastro">
         <section class="cad_part-1">
-        <div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
-        <form class="forms_cadastro" action="/">
-            <div class="inputs">
-            <p>Nome:</p><input placeholder="DIGITE NOME AQUI..." type="text" name="nome" id="nome_input">
-            </div>
-            <div class="inputs">
-            <p>Email:</p><input placeholder="DIGITE EMAIL AQUI..." type="text" name="email" id="email_input">
-            </div>
-            <div class="inputs">
-                    <p>Usuário:</p>
-                <div class="radios">
-                    <div><input type="radio" name="user_choice" id="user_default" value="user_default"><P>PADRÃO</P></div>
-                    <div><input type="radio" name="user_choice" id="user_fluente" value="user_fluente"><p>FLUENTE</p></div>
+            <div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
+            <form class="forms_cadastro" action="/" methon="_POST">
+                <input type="hidden" name="cad_part" value="1">
+                <div class="inputs">
+                <p>Nome:</p><input type="text" name="nome" id="nome_input" placeholder="DIGITE NOME AQUI...">
                 </div>
-            </div>
-            <div class="bts">
-                <input type="submit"onclick="" value="Continuar" id="btn_continue">
-                <button id="btn_cancel" onclick="btn_pagina_inicial()">Cancelar</button>
-            </div>
-        </form>
+                <div class="inputs">
+                <p>Email:</p><input type="text" name="email" id="email_input" placeholder="DIGITE EMAIL AQUI...">
+                </div>
+                <div class="inputs">
+                        <p>Usuário:</p>
+                    <div class="radios">
+                        <div><input type="radio" name="user_choice" id="user_default" value="user_default"><P>PADRÃO</P></div>
+                        <div><input type="radio" name="user_choice" id="user_fluente" value="user_fluente"><p>FLUENTE</p></div>
+                    </div>
+                </div>
+                <div class="bts">
+                    <input type="submit"onclick="" value="Continuar" id="btn_continue">
+                    <button id="btn_cancel" onclick="btn_pagina_inicial()">Cancelar</button>
+                </div>
+            </form>
         </section>
 
     </main>

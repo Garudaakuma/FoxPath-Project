@@ -12,7 +12,7 @@
     <section class="error_connection">
         <h1>✖ Falha na conexão! ✖</h1>
         <div class="forms">
-        <form name="form" id="form" method="post" action="add_new_connection.php">
+        <form name="form" id="form" method="post" action="LOGIC/add_new_bd.php">
         <div class="inputs">
             <div class="server_input">
                 <p>Server name</p><input type="text" name="servername" id="servername">
