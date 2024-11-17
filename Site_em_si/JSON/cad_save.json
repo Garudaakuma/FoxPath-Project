@@ -9,10 +9,12 @@
         "fluente_bool": null,
         "genero": null,
         "data_nascimento": null,
-        "Certificado": null
+        "certificado_nome": null,
+        "certificado_data_emissao": null,
+        "certificado_data_expiracao": null
     },
     "cad_part-3": {
         "senha": null,
-        "confirm_senha": null
+        "senha_confirm": null
     }
 }

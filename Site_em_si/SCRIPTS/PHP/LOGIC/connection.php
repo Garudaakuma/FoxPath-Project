@@ -1,6 +1,6 @@
 
 <?php
-$jsonData = json_decode(file_get_contents("/FoxPath-Project/Site_em_si/SCRIPTS/JSON/bd_info.json"), true);
+$jsonData = json_decode(file_get_contents("/xampp/htdocs/FoxPath-Project/Site_em_si/JSON/bd_info.json"), true);
 $server_info = [
     "servername"=>"{$jsonData["mySql"]["servername"]}",
     "username"=>"{$jsonData["mySql"]["username"]}",
@@ -10,7 +10,7 @@ $server_info = [
 ];
 
 if ($server_info["password"] === "****") {
-    header("Location: /FoxPath-Project/Site_em_si/SCRIPTS/PHP/connection_error.php");
+    header("Location: /xampp/htdocs/FoxPath-Project/Site_em_si/SCRIPTS/PHP/connection_error.php");
 }
 
 $conn = new mysqli( $server_info['servername'],
@@ -20,7 +20,7 @@ $conn = new mysqli( $server_info['servername'],
                     $server_info['port']);
 
 if ($conn->connect_error) {
-    header("Location: /FoxPath-Project/Site_em_si/SCRIPTS/PHP/connection_error.php");
+    header("Location: /xampp/htdocs/FoxPath-Project/Site_em_si/SCRIPTS/PHP/connection_error.php");
 }
 
 // TODO: SQL COMMANDS...

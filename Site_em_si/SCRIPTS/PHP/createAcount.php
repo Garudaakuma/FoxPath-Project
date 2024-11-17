@@ -19,7 +19,7 @@
     <main class="cadastro">
         <section class="cad_part-1">
             <div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
-            <form class="forms_cadastro" action="/" methon="_POST">
+            <form class="forms_cadastro" methon="_POST">
                 <input type="hidden" name="cad_part" value="1">
                 <div class="inputs">
                 <p>Nome:</p><input type="text" name="nome" id="nome_input" placeholder="DIGITE NOME AQUI...">
@@ -34,11 +34,11 @@
                         <div><input type="radio" name="user_choice" id="user_fluente" value="user_fluente"><p>FLUENTE</p></div>
                     </div>
                 </div>
-                <div class="bts">
-                    <input type="submit"onclick="" value="Continuar" id="btn_continue">
+            </form>
+            <div class="bts">
+                    <button id="btn_continue" onclick="btn_continue()">Continue</button>
                     <button id="btn_cancel" onclick="btn_pagina_inicial()">Cancelar</button>
                 </div>
-            </form>
         </section>
 
     </main>

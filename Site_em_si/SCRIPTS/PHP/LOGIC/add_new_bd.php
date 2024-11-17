@@ -1,6 +1,6 @@
 
 <?php
-$contentJson = file_get_contents("/Site_em_si/JSON/bd_info.json");
+$contentJson = file_get_contents("/xampp/htdocs/FoxPath-Project/Site_em_si/JSON/bd_info.json");
 if ($contentJson === false) {
     die("Error reading json file");
 }
@@ -14,7 +14,9 @@ if ($jsonDataDecoded === null) {
 echo "<pre>";
 print_r($jsonDataDecoded);
 echo "</pre>";
-// $jsonDataDecoded['mySql'] = $_POST;
-// print_r($jsonDataDecoded);
-// file_put_contents("/FoxPath-Project/Site_em_si/JSON/bd_info.json", json_encode($jsonDataDecoded));
-// header("Location: connection.php");
+$jsonDataDecoded['mySql'] = $_POST;
+echo "<pre>";
+print_r($jsonDataDecoded);
+echo "</pre>";
+file_put_contents("/xampp/htdocs/FoxPath-Project/Site_em_si/JSON/bd_info.json", json_encode($jsonDataDecoded));
+header("Location: connection.php");
