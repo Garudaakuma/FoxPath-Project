@@ -1,4 +1,30 @@
 
+<?php
+$jsonDecoded = json_decode(file_get_contents("/xampp/htdocs/Foxpath-Project/Site_em_si/JSON/cad_save.json"), true);
+$cad_part = $jsonDecoded["cad_part"];
+function cadPar($cad_part, $fluente_bool){
+    switch ($cad_part) {
+        case "1":
+            return include "/xampp/htdocs/Foxpath-Project/Site_em_si/SCRIPTS/HTML/cad_part1.html";
+        case "2":
+            switch ($fluente_bool) {
+                case "true":
+                    return include "/xampp/htdocs/Foxpath-Project/Site_em_si/SCRIPTS/HTML/cad_part2-2.html";
+                case "false":
+                    return include "/xampp/htdocs/Foxpath-Project/Site_em_si/SCRIPTS/HTML/cad_part2-1.html";
+                default:
+                    echo 'Parte inválida!';
+                    break;
+            }
+        case "3":
+            return include "/xampp/htdocs/Foxpath-Project/Site_em_si/SCRIPTS/HTML/cad_part3.html";
+        default:
+            echo 'Parte inválida!';
+            break;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,30 +43,7 @@
         </div>
     </section>
     <main class="cadastro">
-        <section class="cad_part-1">
-            <div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
-            <form class="forms_cadastro" methon="_POST">
-                <input type="hidden" name="cad_part" value="1">
-                <div class="inputs">
-                <p>Nome:</p><input type="text" name="nome" id="nome_input" placeholder="DIGITE NOME AQUI...">
-                </div>
-                <div class="inputs">
-                <p>Email:</p><input type="text" name="email" id="email_input" placeholder="DIGITE EMAIL AQUI...">
-                </div>
-                <div class="inputs">
-                        <p>Usuário:</p>
-                    <div class="radios">
-                        <div><input type="radio" name="user_choice" id="user_default" value="user_default"><P>PADRÃO</P></div>
-                        <div><input type="radio" name="user_choice" id="user_fluente" value="user_fluente"><p>FLUENTE</p></div>
-                    </div>
-                </div>
-            </form>
-            <div class="bts">
-                    <button id="btn_continue" onclick="btn_continue()">Continue</button>
-                    <button id="btn_cancel" onclick="btn_pagina_inicial()">Cancelar</button>
-                </div>
-        </section>
-
+        <?php cadPar($cad_part, $jsonDecoded["cad_part-1"]["fluente_bool"]) ?>
     </main>
 </body>
 <script src="../JS/main.js"></script>

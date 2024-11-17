@@ -1,0 +1,26 @@
+
+<section class="cad_part">
+    <div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
+    <form class="forms_cadastro" action="/FoxPath-Project/Site_em_si/SCRIPTS/PHP/LOGIC/saveCadPart.php" method="post">
+        <input type="hidden" name="cad_part" value="1">
+        <div class="inputs">
+        <p>Nome:</p><input type="text" name="nome" id="nome_input" placeholder="DIGITE NOME AQUI...">
+        </div>
+        <div class="inputs">
+        <p>Email:</p><input type="text" name="email" id="email_input" placeholder="DIGITE EMAIL AQUI...">
+        </div>
+        <div class="inputs">
+                <p>Usuário:</p>
+            <div class="radios">
+                <div><input type="radio" name="user_choice" id="user_default" value="false"><P>PADRÃO</P></div>
+                <div><input type="radio" name="user_choice" id="user_fluente" value="true"><p>FLUENTE</p></div>
+            </div>
+        </div><br>
+        <div class="bts">
+            <input type="submit" id="btn_continue" value="Continue">
+        </div>
+    </form>
+    <div class="bts">
+        <button id="btn_cancel" onclick="btn_pagina_inicial()">Cancelar</button>
+    </div>
+</section>

@@ -1,20 +1,23 @@
 {
-    "cad_part": null,
+    "cad_part": "3",
     "cad_part-1": {
-        "nome": null,
-        "email": null,
-        "user_choice": null
+        "nome": "da",
+        "email": "da",
+        "fluente_bool": "false"
     },
     "cad_part-2": {
-        "fluente_bool": null,
-        "genero": null,
-        "data_nascimento": null,
-        "certificado_nome": null,
-        "certificado_data_emissao": null,
-        "certificado_data_expiracao": null
+        "fluente_bool": "false",
+        "genero": "male",
+        "data_nascimento": "2005-08-03",
+        "numero_telefone": "7191234567",
+        "nacionalidade": "brasileiro",
+        "idioma_fluente": "none",
+        "certificado_nome": "none",
+        "certificado_data_emissao": "none",
+        "certificado_data_expiracao": "none"
     },
     "cad_part-3": {
-        "senha": null,
-        "senha_confirm": null
+        "senha": "123456",
+        "senha_confirm": "123456"
     }
 }

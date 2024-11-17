@@ -1,0 +1,35 @@
+
+<section class="cad_part">
+    <div class="title_block"><h1 class="title-cad">ME FALE SOBRE VOCE</h1></div>
+    <form class="forms_cadastro" action="/FoxPath-Project/Site_em_si/SCRIPTS/PHP/LOGIC/saveCadPart.php" method="post">
+        <input type="hidden" name="cad_part" value="2">
+        <input type="hidden" name="fluente_bool" value="false">
+        <div class="inputs">
+        <p>Gênero:</p>
+            <div class="radios">
+                    <div><input type="radio" name="genero" id="male" value="male"><p>MASCULINO</p></div>
+                    <div><input type="radio" name="genero" id="female" value="female"><p>FEMININO</p></div>
+                    <div><input type="radio" name="genero" id="other" value="other"><p>OUTRO</p></div>
+            </div>
+        </div>
+        <div class="inputs">
+        <p>Data de nascimento:</p><input type="date" name="data_nascimento" id="data_nasc_input" placeholder="DD / MM / YYYY">
+        </div>
+        <div class="inputs">
+        <p>Número de telefone:</p><input type="text" name="numero_telefone" id="num_telefone_input" placeholder="(XX) XXXXX-XXXX">
+        </div>
+        <div class="inputs">
+        <p>nacionalidade:</p><input type="text" name="nacionalidade" id="nacionalidade_input" placeholder="DIGITE SUA NACIONALIDADE...">
+        </div><br>
+        <input type="hidden" name="idioma_fluente" value="none">
+        <input type="hidden" name="certificado_nome" value="none">
+        <input type="hidden" name="certificado_data_emissao" value="none">
+        <input type="hidden" name="certificado_data_expiracao" value="none">
+        <div class="bts">
+            <input type="submit" id="btn_continue" value="Continue">
+        </div>
+    </form>
+    <div class="bts">
+        <button id="btn_voltar" onclick="btn_voltar()">Voltar</button>
+    </div>
+</section>

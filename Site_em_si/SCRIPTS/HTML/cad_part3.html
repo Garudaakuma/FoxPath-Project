@@ -1,0 +1,27 @@
+
+<section class="cad_part">
+    <div class="title_block"><h1 class="title-cad">CRIE SUA CONTA!</h1></div>
+    <form class="forms_cadastro" action="/FoxPath-Project/Site_em_si/SCRIPTS/PHP/LOGIC/saveCadPart.php" method="post">
+        <input type="hidden" name="cad_part" value="3">
+        <div class="inputs">
+        <p>Senha:</p>
+            <div class="pw_inputs">
+                <input type="password" name="senha" id="password_input" placeholder="DIGITE UMA SENHA AQUI...">
+                <input type="checkbox" onclick="togglePassword('password_input')" onkeypress="togglePassword('password_input')">
+            </div>
+        </div>
+        <div class="inputs">
+        <p>Confirmar Senha:</p>
+            <div class="pw_inputs">
+                <input type="password" name="senha_confirm" id="password_confirm_input" placeholder="DIGITE A SENHA NOVAMENTE">
+                <input type="checkbox" onclick="togglePassword('password_confirm_input')" onkeypress="togglePassword('password_confirm_input')">
+            </div>
+        </div><br>
+        <div class="bts">
+            <input type="submit" id="btn_continue" value="Criar conta">
+        </div>
+    </form>
+    <div class="bts">
+        <button id="btn_voltar" onclick="btn_voltar()">Voltar</button>
+    </div>
+</section>

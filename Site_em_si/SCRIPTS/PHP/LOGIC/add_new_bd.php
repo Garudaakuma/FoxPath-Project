@@ -18,5 +18,5 @@ $jsonDataDecoded['mySql'] = $_POST;
 echo "<pre>";
 print_r($jsonDataDecoded);
 echo "</pre>";
-file_put_contents("/xampp/htdocs/FoxPath-Project/Site_em_si/JSON/bd_info.json", json_encode($jsonDataDecoded));
+file_put_contents("/xampp/htdocs/FoxPath-Project/Site_em_si/JSON/bd_info.json", json_encode($jsonDataDecoded, JSON_PRETTY_PRINT));
 header("Location: connection.php");

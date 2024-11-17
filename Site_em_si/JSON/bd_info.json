@@ -2,7 +2,7 @@
     "mySql": {
         "servername": "localhost",
         "username": "root",
-        "password": "****",
+        "password": "Rock#blues031023",
         "database": "bd_foxpath",
         "port": "3307"
     }
