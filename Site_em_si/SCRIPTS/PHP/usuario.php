@@ -9,15 +9,15 @@
 </head>
 <body class="body_usuario">
     <header class="header_usuario">
-        <img class="logo_icon" src="/FoxPath-Project/Site_em_si/IMAGES/foxpath-transparent.png" alt="logoFoxPath">
         <div class="left_side">
+            <img class="logo_icon" src="/FoxPath-Project/Site_em_si/IMAGES/header_img/mini_logo.png" alt="logoFoxPath">
             <button onclick="btn_pagina_inicial()" class="logout">LOGOUT</button>
         </div>
         <div class="right_side">
-            <div class="notification">notification</div>
+            <button onclick="" class="btn_notification"></button>
             <div class="score">score</div>
             <div class="name">nome</div>
-            <div class="perfil">perfil</div>
+            <button onclick="" class="btn_perfil"></button>
         </div>
     </header>
     <div class="modo_jogo">

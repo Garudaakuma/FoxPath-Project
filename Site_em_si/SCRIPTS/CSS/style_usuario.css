@@ -3,6 +3,7 @@ header{
     background-color: rgba(0,121,255,1);
     height: 10vh;
     width: 100%;
+    justify-content: space-between;
 }
 
 .body_usuario{
@@ -74,10 +75,24 @@ header{
     align-items: center;
     gap: 10%;
     width: auto;
+    height: auto;
+    padding-right: 20px;
 }
 
-.notification{
-    
+.logo_icon {
+    width: 5vh;
+    height: 5vh;
+}
+
+.btn_notification{
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/header_img/notification.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 3vw;
+    height: 3vh;
+    border: none;
+    cursor: pointer;
 }
 
 .score{
@@ -88,6 +103,13 @@ header{
     
 }
 
-.perfil{
-    
+.btn_perfil{
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/header_img/perfil.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 4vw;
+    height: 4vh;
+    border: none;
+    cursor: pointer;
 }
