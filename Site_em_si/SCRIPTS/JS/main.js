@@ -12,17 +12,17 @@ function btn_pagina_inicial() {
 }
 
 function btn_back_usuario() {
-    window.location.href = "/FOXPATH/SCRIPTS/PHP/usuario.php"
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/usuario.php"
 }
 
 function btn_go_to_idioma() {
-    window.location.href = "/FOXPATH/SCRIPTS/PHP/usuario_idioma.php"
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/usuario_idioma.php"
 }
 
 function btn_go_to_niveis() {
-    window.location.href = "/FOXPATH/SCRIPTS/PHP/usuario_niveis.php"
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/usuario_niveis.php"
 }
 
 function btn_go_to_easy_exercise() {
-
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/easy_exercise.php"
 }

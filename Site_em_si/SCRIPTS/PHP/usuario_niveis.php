@@ -19,7 +19,7 @@
 <body class="body_nivel">
     <div class="niveis">
         <div class="facil">
-            <button onclick="" class="btn_facil"></button>
+            <button onclick="btn_go_to_easy_exercise()" class="btn_facil"></button>
         </div>
         <div class="intermediario">
             <button onclick="" class="btn_intermediario"></button>
@@ -29,5 +29,5 @@
         </div>
     </div>
 </body>
-<script src="../JS/main.js"></script>
+<script src="/FoxPath-Project/Site_em_si/SCRIPTS/JS/main.js"></script>
 </html>
