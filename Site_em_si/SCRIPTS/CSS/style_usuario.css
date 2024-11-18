@@ -1,9 +1,8 @@
 header{
+    display: flex;
     background-color: rgba(0,121,255,1);
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 10vh;
+    width: 100%;
 }
 
 .body_usuario{
@@ -45,28 +44,50 @@ header{
     align-items: center;
 }
 
-.icon{
-    float: left;
+.left_side {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+}
+
+.logo_icon {
+    width: 5%;
+    margin: 1vw;
 }
 
 .logout{
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 1vh 3vw;
+    border-radius: 10px;
     cursor: pointer;
-    float: left;
+} .logout:hover {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
+.right_side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    width: auto;
+}
 
 .notification{
-    float: right;
+    
 }
 
 .score{
-    float: right;
+    
 }
 
 .name{
-    float: right;
+    
 }
 
 .perfil{
-    float: right;
+    
 }
