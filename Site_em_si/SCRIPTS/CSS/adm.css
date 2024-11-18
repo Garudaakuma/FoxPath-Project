@@ -1,5 +1,5 @@
 header{
-    background-color: rgb(83, 91, 250);
+    background-color: rgba(0,121,255,1);
     padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 15px;
@@ -22,4 +22,78 @@ header{
 .logout{
     float: right;
     cursor: pointer;
+}
+
+.menu_adm{
+    background-color: blue;
+    width: 15%;
+    height: 87vh;
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+
+.btn_denuncias{
+    background-color: rgba(0,121,255,1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    height: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
+.btn_perfis{
+    background-color: rgba(0,121,255,1);
+    color: white;
+    border: none;
+    width: 70%;
+    height: 30%;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 30%;
+}
+
+.btn_banidos{
+    background-color: rgba(0,121,255,1);
+    color: white;
+    border: none;
+    width: 70%;
+    height: 30%;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 30%;
+}
+
+.btn_relatorio{
+    background-color: rgba(0,121,255,1);
+    color: white;
+    border: none;
+    width: 70%;
+    height: 30%;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 30%;
 }
