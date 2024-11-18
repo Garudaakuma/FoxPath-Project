@@ -6,29 +6,37 @@ header{
     padding-right: 15px;
 }
 
-.body_usuario{
+.body_fluente{
     background-color:black;
     margin: 0%;
 }
 
-.btn_single{
+.btn_disponibilidade{
     position: absolute;
-    height: 100%;
+    height: 150%;
     width: 49%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/fluente_img/disponibilidade.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
 }
 
-.btn_multi{
+.btn_participar{
     position: absolute;
-    height: 100%;
+    height: 150%;
     width: 49%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/fluente_img/participar.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
 }
 
 .modo_jogo{
@@ -45,7 +53,6 @@ header{
     cursor: pointer;
     float: left;
 }
-
 
 .notification{
     float: right;

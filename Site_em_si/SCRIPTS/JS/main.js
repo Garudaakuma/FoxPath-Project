@@ -26,3 +26,23 @@ function btn_go_to_niveis() {
 function btn_go_to_easy_exercise() {
     window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/easy_exercise.php"
 }
+
+function btn_go_to_disponibilidade() {
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/disponibilidade.php"
+}
+
+function btn_go_to_participar() {
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/participar.php"
+}
+
+function btn_usuario_multiplayer() {
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/usuario_multiplayer.php"
+}
+
+function btn_back_to_fluente() {
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/fluente.php"
+}
+
+function btn_back_to_adm() {
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/adm.php"
+}

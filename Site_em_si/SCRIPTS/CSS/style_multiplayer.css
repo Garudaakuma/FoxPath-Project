@@ -6,7 +6,7 @@ header{
     padding-right: 15px;
 }
 
-.body_idioma{
+.body_fluente{
     background-color:black;
     margin: 0%;
     justify-content: center;
@@ -43,27 +43,3 @@ header{
     float: right;
 }
 
-.idioma{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.btn_ingles{
-    position: absolute;
-    height: 100%;
-    width: 20%;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/idioma_img/ingles.png);
-    background-size: cover;
-    background-position: center;
-    border: none;
-}

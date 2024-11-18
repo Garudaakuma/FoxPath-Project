@@ -21,7 +21,7 @@
             <button onclick="btn_go_to_idioma()" class="btn_single"></button>
         </div>
         <div class="multiplayer">
-            <button class="btn_multi"></button>
+            <button onclick="btn_usuario_multiplayer()" class="btn_multi"></button>
         </div>
     </div>
 </body>
