@@ -1,0 +1,25 @@
+header{
+    background-color: rgb(83, 91, 250);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body_adm{
+    background-color:black;
+    margin: 0%;
+}
+
+.icon_perfil{
+    float: left;
+}
+
+.nome{
+    float: left;
+}
+
+.logout{
+    float: right;
+    cursor: pointer;
+}
