@@ -80,7 +80,7 @@ CREATE TABLE certificado(
     id_certificado INTEGER NOT NULL AUTO_INCREMENT,
     id_fluente INTEGER NOT NULL,
     nome VARCHAR(100) NOT NULL,
-    pdf_certificado BLOB NOT NULL,
+    pdf_certificado BLOB,
     data_emissao DATE NOT NULL,
     data_expiracao DATE NOT NULL,
     PRIMARY KEY(id_certificado, id_fluente),

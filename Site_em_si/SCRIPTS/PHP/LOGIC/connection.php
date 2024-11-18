@@ -59,11 +59,11 @@ foreach ($choicePick as $cp) {
 }
 echo "tag: $tag";
 $nome = $data_cadastro[0]["nome"];
-$data_nascimento = $data_cadastro[0]["data_nascimento"];
+$data_nascimento = $data_cadastro[1]["data_nascimento"];
 $email = $data_cadastro[0]["email"];
-$nome = $data_cadastro[0]["nome"];
-$nome = $data_cadastro[0]["nome"];
-$sqlQuery_pt1 = "INSERT INTO pessoas(
+$senha = $data_cadastro[2]["senha"];
+$numero_telefone = $data_cadastro[1]["numero_telefone"];
+$sqlQuery_part1 = "INSERT INTO pessoas(
     tag,
     nome,
     data_nasc,
@@ -71,23 +71,84 @@ $sqlQuery_pt1 = "INSERT INTO pessoas(
     senha,
     num_telefone
 )VALUES(
-    $tag,
-    $data_cadastro[0]['nome'],
-    $data_cadastro[1]['data_nascimento'],
-    $data_cadastro[0]['email'],
-    $data_cadastro[2]['senha'],
-    $data_cadastro[1]['numero_telefone']
+    '{$tag}',
+    '{$nome}',
+    '{$data_nascimento}',
+    '{$email}',
+    '{$senha}',
+    '{$numero_telefone}'
 )";
 
 echo "<pre>";
-echo $sqlQuery_pt1;
+echo $sqlQuery_part1;
 echo "</pre>";
 
-if ($conn->query($sqlQuery_pt1)=== TRUE) {
-    $last_id = $conn->insert_id;
-    echo "New record created successfully. Last inserted ID is: ". $last_id;
+if ($conn->query($sqlQuery_part1)=== TRUE) {
+    $last_pt1_id = $conn->insert_id;
+    echo "New record created successfully. Last inserted ID is: ". $last_pt1_id;
 } else {
-    echo "Error: ". $sqlQuery_pt1. "<br>". $conn->error;
+    echo "Error: ". $sqlQuery_part1. "<br>". $conn->error;
+}
+
+$nacionalidade = $data_cadastro[1]["nacionalidade"];
+$sqlQuery_part2 = "INSERT INTO usuarios(
+    id_pessoa,
+    nacionalidade
+) VALUES (
+    '{$last_pt1_id}',
+    '{$nacionalidade}'
+)
+";
+
+if ($conn->query($sqlQuery_part2)=== TRUE) {
+    $last_pt2_id = $conn->insert_id;
+    echo "New record created successfully. Last inserted ID is: ". $last_pt2_id;
+} else {
+    echo "Error: ". $sqlQuery_part2. "<br>". $conn->error;
+}
+
+if ($data_cadastro[0]["fluente_bool"] === "true") {
+    $idioma_fluente = $data_cadastro[1]["idioma_fluente"];
+    $sqlQuery_part3 = "INSERT INTO fluentes (
+        id_usuarios
+        idioma_fluente
+    ) VALUES (
+        '{$last_pt2_id}',
+        '{$idioma_fluente}'
+    )
+    ";
+    if ($conn->query($sqlQuery_part3)=== TRUE) {
+        $last_pt3_id = $conn->insert_id;
+        echo "New record created successfully. Last inserted ID is: ". $last_pt3_id;
+    } else {
+        echo "Error: ". $sqlQuery_part3. "<br>". $conn->error;
+    }
+    $certificado_nome = $data_cadastro[1]["certificado_nome"];
+    $certificado_data_emissao = $data_cadastro[1]["certificado_data_emissao"];
+    $certificado_data_expiracao = $data_cadastro[1]["certificado_data_expiracao"];
+    $sqlQuery_part4 = "INSERT INTO certificado(
+        id_fluente,
+        nome,
+        pdf_certificado,
+        data_emissao,
+        data_expiracao
+    )VALUES(
+        '{$last_pt3_id}',
+        '{$certificado_nome}',
+        NULL,
+        '{$certificado_data_emissao}',
+        '{$certificado_data_expiracao}'
+    )
+    ";
+    if ($conn->query($sqlQuery_part4)=== TRUE) {
+        $last_pt4_id = $conn->insert_id;
+        echo "New record created successfully. Last inserted ID is: ". $last_pt4_id;
+    } else {
+        echo "Error: ". $sqlQuery_part4. "<br>". $conn->error;
+    }
+    header("Location: /FoxPath-Project/Site_em_si/SCRIPTS/PHP/usuario.php");
+} else {
+    header("Location: /FoxPath-Project/Site_em_si/SCRIPTS/PHP/usuario.php");
 }
 
 $conn->close();
