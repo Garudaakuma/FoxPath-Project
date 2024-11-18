@@ -4,6 +4,13 @@
   flex-direction: column;
 }
 
+.tela_login{
+  background-image: url(/FoxPath-Project/Site_em_si/IMAGES/main_img/background.png);
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
 .sub_title_letters {
     background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(0,121,255,1) 85%);
     -webkit-background-clip: text;
@@ -14,7 +21,7 @@
 
 .sub_title_block{
   background: linear-gradient(0deg, rgba(0,121,255,1) 20%, rgba(255, 255, 255, 1) 85%);
-    padding: 1vh 4vw;
+    padding: 0.5vh 7vw;
     border-radius: 10px;
 }
 
