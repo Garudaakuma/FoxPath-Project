@@ -132,7 +132,7 @@ INSERT INTO certificado(
 ) VALUES (
 	4,
     "certificado_1",
-    "LOAD_FILE('/FoxPath-Project/Site_em_si/IMAGES/PDF/algo.pdf')",
+    NULL,
     "1999-12-01", -- emissão
     "2000-12-02"  -- expiracao
 );
