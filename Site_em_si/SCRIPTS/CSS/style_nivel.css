@@ -1,0 +1,91 @@
+header{
+    background-color: rgb(83, 91, 250);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body_nivel{
+    background-color:black;
+    margin: 0%;
+}
+
+.icon{
+    float: left;
+}
+
+.logout{
+    cursor: pointer;
+    float: left;
+}
+
+.back{
+    cursor: pointer;
+    float: left;
+}
+
+.notification{
+    float: right;
+}
+
+.score{
+    float: right;
+}
+
+.name{
+    float: right;
+}
+
+.perfil{
+    float: right;
+}
+
+.niveis{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35%;
+}
+
+.btn_facil{
+    position: absolute;
+    height: 150%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url(/FOXPATH/IMAGES/niveis_img/facil_blue.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.btn_intermediario{
+    position: absolute;
+    height: 150%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url(/FOXPATH/IMAGES/niveis_img/intermediario_gray.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.btn_dificil{
+    position: absolute;
+    height: 150%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url(/FOXPATH/IMAGES/niveis_img/avancado_gray.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}

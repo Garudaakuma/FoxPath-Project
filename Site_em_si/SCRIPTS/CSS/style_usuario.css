@@ -1,0 +1,72 @@
+header{
+    background-color: rgb(83, 91, 250);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body_usuario{
+    background-color:black;
+    margin: 0%;
+}
+
+.btn_single{
+    position: absolute;
+    height: 150%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url(/FOXPATH/IMAGES/usuario_img/single_img.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.btn_multi{
+    position: absolute;
+    height: 150%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url(/FOXPATH/IMAGES/usuario_img/multi_img.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.modo_jogo{
+    display: flex;
+    column-gap: 51%;
+    align-items: center;
+}
+
+.icon{
+    float: left;
+}
+
+.logout{
+    cursor: pointer;
+    float: left;
+}
+
+
+.notification{
+    float: right;
+}
+
+.score{
+    float: right;
+}
+
+.name{
+    float: right;
+}
+
+.perfil{
+    float: right;
+}

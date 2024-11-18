@@ -1,0 +1,64 @@
+header{
+    background-color: rgb(83, 91, 250);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body_usuario{
+    background-color:black;
+    margin: 0%;
+}
+
+.btn_single{
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn_multi{
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modo_jogo{
+    display: flex;
+    column-gap: 51%;
+    align-items: center;
+}
+
+.icon{
+    float: left;
+}
+
+.logout{
+    cursor: pointer;
+    float: left;
+}
+
+
+.notification{
+    float: right;
+}
+
+.score{
+    float: right;
+}
+
+.name{
+    float: right;
+}
+
+.perfil{
+    float: right;
+}
