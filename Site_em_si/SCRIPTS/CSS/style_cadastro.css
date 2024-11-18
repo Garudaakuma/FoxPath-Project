@@ -1,7 +1,8 @@
 body{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/main_img/background.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
 }
 
 .cadastro {
