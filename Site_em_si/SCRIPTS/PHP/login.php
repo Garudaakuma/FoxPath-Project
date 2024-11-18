@@ -16,35 +16,35 @@
     </section>
     <section class="foxpath_faca_login">
         <div class="sub_title_letters">FAÇA O LOGIN!</div>
+        <div class="insert_dados">
+            <div class="EMAIL">
+                <div class="text_email">Email:</div>
+                <div class="insert_email">
+                    <input type="text" id="email" name="email" placeholder="DIGITE EMAIL AQUI">
+                </div>
+                <div class="forgot_email">Esqueceu o Email?</div>
+            </div>
+            <div class="SENHA">
+                <div class="text_senha">Senha:</div>
+                <div class="insert_senha">
+                    <input type="text" id="email" name="email" placeholder="DIGITE UMA SENHA AQUI">
+                </div>
+                <div class="forgot_senha"> Esqueceu a Senha?</div>
+            </div>
+            <div class="USUARIO">
+                <div class="text_usuario">Usuário:</div>
+                <div class="choose_user">
+                    <input type="checkbox" id="padrao" name="padrao"> PADRÃO
+                    <input type="checkbox" id="fluente" name="fluente"> FLUENTE
+                    <input type="checkbox" id="adm" name="adm"> ADMINISTRADOR
+                </div>
+            </div>
+        </div>
+        <div class="login_buttons">
+            <div class="login_button"><button>Login</button></div>
+            <div class="back_button"><button onclick="btn_pagina_inicial()">Voltar</button></div>
+        </div>
     </section>
-    <div class="insert_dados">
-        <div class="EMAIL">
-            <div class="text_email">Email:</div>
-            <div class="insert_email">
-                <input type="text" id="email" name="email" placeholder="DIGITE EMAIL AQUI">
-            </div>
-            <div class="forgot_email">Esqueceu o Email?</div>
-        </div>
-        <div class="SENHA">
-            <div class="text_senha">Senha:</div>
-            <div class="insert_senha">
-                <input type="text" id="email" name="email" placeholder="DIGITE UMA SENHA AQUI">
-            </div>
-            <div class="forgot_senha"> Esqueceu a Senha?</div>
-        </div>
-        <div class="USUARIO">
-            <div class="text_usuario">Usuário:</div>
-            <div class="choose_user">
-                <input type="checkbox" id="padrao" name="padrao"> PADRÃO
-                <input type="checkbox" id="fluente" name="fluente"> FLUENTE
-                <input type="checkbox" id="adm" name="adm"> ADMINISTRADOR
-            </div>
-        </div>
-    </div>
-    <div class="login_buttons">
-        <div class="login_button"><button>Login</button></div>
-        <div class="back_button"><button onclick="btn_pagina_inicial()">Voltar</button></div>
-    </div>
 </body>
 <script src="../JS/main.js"></script>
 </html>
