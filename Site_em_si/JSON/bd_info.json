@@ -5,5 +5,6 @@
         "password": "Rock#blues031023",
         "database": "bd_foxpath",
         "port": "3307"
-    }
+    },
+    "cad_part": "1"
 }

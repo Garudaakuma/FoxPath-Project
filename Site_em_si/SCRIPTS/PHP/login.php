@@ -35,11 +35,11 @@
             <div class="USUARIO">
                 <div class="text_usuario">Usuário:</div>
                 <div class="choose_user">
-                    <input onclick="btn_back_usuario()" type="checkbox" id="padrao" name="padrao">
+                    <input onclick="btn_back_usuario()" type="radio" id="padrao" name="radio">
                     <label for="padrao">PADRÃO</label>
-                    <input onclick="btn_back_to_fluente()" type="checkbox" id="fluente" name="fluente">
+                    <input onclick="btn_back_to_fluente()" type="radio" id="fluente" name="radio">
                     <label for="fluente">FLUENTE</label>
-                    <input onclick="btn_back_to_adm()" type="checkbox" id="adm" name="adm">
+                    <input onclick="btn_back_to_adm()" type="radio" id="adm" name="radio">
                     <label for="adm">ADMINISTRADOR</label>
                 </div> <br>
             </div>
