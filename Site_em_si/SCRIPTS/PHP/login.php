@@ -6,7 +6,6 @@
     <link rel="icon" type="image/x-icon" href="/FoxPath-Project/Site_em_si/IMAGES/ico_logoFoxPath/favicon.ico">
     <link rel="stylesheet" href="/FoxPath-Project/Site_em_si/SCRIPTS/CSS/style_main.css">
     <link rel="stylesheet" href="/FoxPath-Project/Site_em_si/SCRIPTS/CSS/style_login.css">
-
     <title>FOXPATH - Login</title>
 </head>
 <body class="tela_login">
@@ -17,6 +16,7 @@
     </section>
     <div class="body_Login">
         <div class="sub_title_letters">FAÇA O LOGIN!</div> <br>
+        <form action="post">
         <div class="insert_dados">
             <div class="EMAIL">
                 <div class="text_email">Email:</div>
@@ -46,9 +46,13 @@
         </div>
         <div class="login_buttons">
             <div class="login_button"><button>Login</button></div> <br>
-            <div class="back_button"><button onclick="btn_pagina_inicial()">Voltar</button></div>
         </div>
+    </form>
+    <div class="login_buttons">
+        <div class="back_button"><button onclick="btn_pagina_inicial()">Voltar</button></div>
+    </div>
     </div>
 </body>
 <script src="../JS/main.js"></script>
+<script src="../JS/login.js"></script>
 </html>
