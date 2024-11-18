@@ -8,7 +8,7 @@ function btn_login() {
 }
 
 function btn_pagina_inicial() {
-    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/main.php"
+    window.location.href = "/FoxPath-Project/Site_em_si/SCRIPTS/PHP/LOGIC/reset_cad.php"
 }
 
 function btn_back_usuario() {
