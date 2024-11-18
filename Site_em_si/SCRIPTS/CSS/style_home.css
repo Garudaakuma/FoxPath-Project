@@ -4,14 +4,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction:column;
-    gap: 35vh;
-}
-
-.foxpath_intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(0def, rgba(255,255,255,1) 0%,rgba(0,121,255,1)100%)
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/main_img/background.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
 }
 
 .letters {
@@ -28,6 +24,8 @@ body {
     justify-content:center;
     flex-direction:column;
     gap: 2vh;
+    margin-top: 32vh;
+    margin-bottom: 10vh;
 }
 
 .buttons_login button {

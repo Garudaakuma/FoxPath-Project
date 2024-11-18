@@ -2,15 +2,16 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #fefefe;
-}
-
 .foxpath_intro {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(0def, rgba(255,255,255,1) 0%,rgba(0,121,255,1)100%)
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/main_img/mountain.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    width: auto;
+    border-radius: 10px;
 }
 
 .letters {
