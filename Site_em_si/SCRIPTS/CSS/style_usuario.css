@@ -19,7 +19,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-image: url(/FOXPATH/IMAGES/usuario_img/single_img.png);
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/usuario_img/single_img.png);
     background-size: cover;
     background-position: center;
     border: none;
@@ -33,7 +33,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-image: url(/FOXPATH/IMAGES/usuario_img/multi_img.png);
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/usuario_img/multi_img.png);
     background-size: cover;
     background-position: center;
     border: none;

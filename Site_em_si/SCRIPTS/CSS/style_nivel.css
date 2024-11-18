@@ -56,7 +56,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-image: url(/FOXPATH/IMAGES/niveis_img/facil_blue.png);
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/niveis_img/facil_blue.png);
     background-size: cover;
     background-position: center;
     border: none;
@@ -70,7 +70,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-image: url(/FOXPATH/IMAGES/niveis_img/intermediario_gray.png);
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/niveis_img/intermediario_gray.png);
     background-size: cover;
     background-position: center;
     border: none;
@@ -84,7 +84,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-image: url(/FOXPATH/IMAGES/niveis_img/avancado_gray.png);
+    background-image: url(/FoxPath-Project/Site_em_si/IMAGES/niveis_img/avancado_gray.png);
     background-size: cover;
     background-position: center;
     border: none;
