@@ -15,7 +15,9 @@
             <div class="letters">XPATH</div>
     </section>
     <div class="body_Login">
-        <div class="sub_title_letters">FAÇA O LOGIN!</div> <br>
+        <div class="sub_title_block">
+            <div class="sub_title_letters">FAÇA O LOGIN!</div>
+        </div> <br>
         <form action="post">
         <div class="insert_dados">
             <div class="EMAIL">
