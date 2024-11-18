@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="/FoxPath-Project/Site_em_si/SCRIPTS/CSS/style_usuario.css">
     <title>FOXPATH - Usuário</title>
 </head>
-<header class="header_usuario">
-    <div class="icon">mini logo</div>
-    <button onclick="btn_pagina_inicial()" class="logout">LOGOUT</button>
-    <div class="notification">notification</div>
-    <div class="score">score</div>
-    <div class="name">nome</div>
-    <div class="perfil">perfil</div>
-</header>
 <body class="body_usuario">
+    <header class="header_usuario">
+        <img class="logo_icon" src="/FoxPath-Project/Site_em_si/IMAGES/foxpath-transparent.png" alt="logoFoxPath">
+        <div class="left_side">
+            <button onclick="btn_pagina_inicial()" class="logout">LOGOUT</button>
+        </div>
+        <div class="right_side">
+            <div class="notification">notification</div>
+            <div class="score">score</div>
+            <div class="name">nome</div>
+            <div class="perfil">perfil</div>
+        </div>
+    </header>
     <div class="modo_jogo">
         <div class="singleplayer">
             <button onclick="btn_go_to_idioma()" class="btn_single"></button>
