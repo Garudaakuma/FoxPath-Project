@@ -47,18 +47,19 @@ footer {
     outline: #FFFFFF solid;
     border-radius: 10px;
     height: 5vh;
-    width: 15vw;
+    width: 10vw;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 } .accessibility_block:hover {
     height: 6vh;
-    width: 16vw;
+    width: 11vw;
 }
 
 .icon_accessibility {
     background-color: #FFFFFF;
     border-radius: 10px;
     margin: 1%;
-    width: 4vw;
+    padding: 1%;
+    width: 2vw;
 }
 
 .btn_accessibility {
@@ -67,7 +68,7 @@ footer {
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
-    height: 3vh;
+    height: 4vh;
 } .btn_accessibility:hover {
     background-color: #062ebe;
 }
@@ -81,7 +82,7 @@ footer {
     border-radius: 10px;
     bottom: 50px;
     height: 6vh;
-    width: 16vw;
+    width: 12vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }.dropup:hover .dropup_accessibility {
@@ -95,17 +96,19 @@ footer {
     background-color: #FFFFFF;
     border-radius: 10px;
     margin: 1%;
-    width: 3vw;
+    padding: 1%;
+    width: 2vw;
 }
 
-.btn_high-constrast {
+.btn_high-contrast {
     cursor: pointer;
     background-color: #0079ff;
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
-    height: 3vh;
+    margin: 1%;
+    height: 4vh;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-} .btn_high-constrast:hover {
+} .btn_high-contrast:hover {
     background-color: #062ebe;
 }

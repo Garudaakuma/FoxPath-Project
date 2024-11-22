@@ -5,6 +5,10 @@
     color: #FFFFFF !important;
 }
 
+footer, header, .menu_adm {
+    outline: #ff00ff solid !important;
+}
+
 button, input, .title_block{
     outline: #00FFFF solid !important;
 }
