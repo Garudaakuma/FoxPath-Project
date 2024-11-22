@@ -22,6 +22,18 @@
             <button onclick="btn_login()" >Fazer login</button>
         </div>
     </main>
+    <footer class="acessibilidade_part">
+        <div class="accessibility_block">
+            <img class="icon_accessibility" src="/FoxPath-Project/Site_em_si/IMAGES/accessibility_icon.png" alt="accessibility_icon.png">
+            <div class="dropup">
+                <button class="btn_accessibility">acessibilidade</button>
+                <div class="dropup_accessibility">
+                    <img class="icon_high-contrast" src="/FoxPath-Project/Site_em_si/IMAGES/brightness.png" alt="highConstrast_icon.png">
+                    <button class="btn_high-constrast" onclick="">AUTO CONSTRASTE</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="../JS/main.js"></script>
 </html>

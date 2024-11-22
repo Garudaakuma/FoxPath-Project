@@ -1,0 +1,10 @@
+
+* {
+    box-sizing: border-box !important;
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+button, input, .title_block{
+    outline: #00FFFF solid !important;
+}
